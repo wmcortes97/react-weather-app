@@ -1,12 +1,13 @@
 import { getDate } from "../utils/getDate";
 import { getTime } from "../utils/getTime";
-function Main() {
+function Main({ city }) {
   return (
     <div className="date-time-container">
-      <h1>City Name</h1>
+      <h1>{city}</h1>
       <span>
         {getDate()} {getTime()}
       </span>
+      <div>raining || humidity || wind</div>
     </div>
   );
 }
