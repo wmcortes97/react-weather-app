@@ -1,6 +1,18 @@
 function Week() {
   return (
-    <div className="week-container">Sun, Mon, Tue, Wed, Thur, Fri, Sat</div>
+    <div className=" theme week-container">
+      <ul>
+        <li>
+          Sunday<div>Icon goes here</div>
+        </li>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thursday</li>
+        <li>Friday</li>
+        <li>Saturday</li>
+      </ul>
+    </div>
   );
 }
 
