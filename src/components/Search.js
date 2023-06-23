@@ -5,27 +5,23 @@ import axios from "axios";
 
 function Search() {
   let [city, setCity] = useState("Your City");
-  let [description, setDescription] = useState("");
-  let [temp, setTemp] = useState(0);
-  let [wind, setWind] = useState(0);
-  let [humidity, setHumidity] = useState(0);
+  let [currentWeatherData, setCurrentWeatherData] = useState([]);
+  let [forecastData, setForecastData] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     let cityInput = e.target.elements.cityInput.value;
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityInput}&units=imperial&appid=${apiKey}`;
-
+    let apiUrl = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${cityInput}&days=7&aqi=no&alerts=no
+`;
     axios
       .get(apiUrl)
       .then((response) => {
         // Handle the API response here
         const responseData = response.data;
         console.log(responseData);
-        setTemp(responseData.main.temp);
-        setDescription(responseData.weather[0].description);
-        setWind(responseData.wind.speed);
-        setCity(responseData.name);
-        setHumidity(responseData.main.humidity);
+        setCity(responseData.location.name);
+        setCurrentWeatherData(responseData.current);
+        setForecastData(responseData.forecast);
       })
       .catch((error) => {
         // Handle any errors that occur during the API request
@@ -42,13 +38,7 @@ function Search() {
         </label>
         <button type="submit">Search</button>
       </form>
-      <Main
-        description={description}
-        city={city}
-        temp={temp}
-        wind={wind}
-        humidity={humidity}
-      />
+      <Main city={city} current={currentWeatherData} forecast={forecastData} />
     </div>
   );
 }

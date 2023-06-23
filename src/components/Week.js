@@ -1,4 +1,5 @@
-function Week() {
+function Week({ forecastData }) {
+  console.log("forecast", forecastData);
   return (
     <div className=" theme week-container">
       <ul>
