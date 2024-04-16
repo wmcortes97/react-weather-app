@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+15+Charted&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.city-name {
+  font-family: "Jersey 15 Charted", sans-serif;
+  text-align: center;
+  font-size: 72px;
+  margin: 20px 0 35px 0;
+  color: #132743;
+}
+.current-temp-container {
+  display: flex;
+}
+
+.unit-container {
+  font-size: 12px;
+}
+.current-weather-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.current-temp-icon-container {
+  display: flex;
+  flex-direction: column;
+}

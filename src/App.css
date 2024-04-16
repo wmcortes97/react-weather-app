@@ -1,45 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-.theme {
-  font-family: "PT Sans Narrow", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-/* .app-container {
-  background-color: blue;
-} */
-h1,
-h2 {
-  font-family: "DM Sans", sans-serif;
-}
-/*********************MAIN CONTAINER CSS**********************/
-.main-container {
-  background-color: purple;
-  margin: auto;
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #407088;
 }
 
-/*SEARCH CONTAINER CSS*/
-.search-container {
-  background-color: green;
-}
-
-/*******************WEEK CONTAINER CSS*****************/
-
-.week-container ul {
-  background-color: red;
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-}
-
-.week-container li {
-  padding: 20px;
-}
-
-/***********************FOOTER CONTAINER CSS********************/
-.footer-container {
-  background-color: blue;
+.app-container {
+  background-color: #ffcbcb;
+  opacity: 0.8;
+  margin: 20px;
+  padding: 50px;
+  border-radius: 5px;
 }
