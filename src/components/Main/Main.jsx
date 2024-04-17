@@ -1,8 +1,9 @@
 import React from "react";
-import { Forecast } from "./Forecast/Forecast";
 import "./Main.css";
+import { Forecast } from "../Forecast/Forecast";
 
 const Main = ({ data }) => {
+  console.log("from main", data);
   const city = data.city;
   const temperature = data.temperature.current;
   const description = data.condition.description;

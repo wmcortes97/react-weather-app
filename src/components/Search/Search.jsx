@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Search.css";
-import { currentWeatherBaseUrl } from "../../../constants/contants";
+import { currentWeatherBaseUrl } from "../../constants/contants";
 import axios from "axios";
 import Main from "../Main/Main";
 

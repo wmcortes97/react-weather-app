@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Search from "./components/Main/Search/Search";
+import Search from "./components/Search/Search";
 import "./App.css";
 
 function App() {
