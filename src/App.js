@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import Main from "./components/Main/Main/Main";
 import Search from "./components/Main/Search/Search";
 import "./App.css";
 
@@ -10,7 +9,6 @@ function App() {
   return (
     <div className="app-container">
       <Search />
-      <Main />
     </div>
   );
 }

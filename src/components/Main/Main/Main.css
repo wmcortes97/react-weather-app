@@ -19,6 +19,14 @@
   justify-content: space-around;
 }
 
+.current-temp {
+  font-size: 80px;
+  font-weight: 700;
+}
+.unit-container {
+  font-size: 14px;
+  font-weight: 600;
+}
 .current-temp-icon-container {
   display: flex;
   flex-direction: column;
