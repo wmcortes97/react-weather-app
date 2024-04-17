@@ -1,15 +1,29 @@
 import React from "react";
 import "./Forecast.css";
+import { getDate } from "../../utils/utils";
 
-export const Forecast = () => {
+export const Forecast = ({ data }) => {
+  const { nextSevenDays } = getDate();
+  console.log(nextSevenDays);
   return (
     <div className="forecast-container">
-      <span>day 1</span>
-      <span>day 2</span>
-      <span>day 3</span>
-      <span>day 4</span>
-      <span>day 5</span>
-      <span>day 6</span>
+      {data != null ? (
+        data.map((dailyForecast, index) => {
+          return (
+            <div className="forecast-day-container">
+              <div>{nextSevenDays[index]}</div>
+              <img src={dailyForecast?.condition?.icon_url} />
+              <span>
+                {dailyForecast?.temperature?.minimum} /
+                {dailyForecast?.temperature?.maximum}
+              </span>
+              {/* <div>{dailyForecast?.condition?.description}</div> */}
+            </div>
+          );
+        })
+      ) : (
+        <div> There is no forecast data</div>
+      )}
     </div>
   );
 };

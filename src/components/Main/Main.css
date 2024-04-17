@@ -3,12 +3,14 @@
 .city-name {
   font-family: "Jersey 15 Charted", sans-serif;
   text-align: center;
-  font-size: 72px;
+  font-size: 100px;
   margin: 20px 0 35px 0;
   color: #132743;
 }
 .current-temp-container {
   display: flex;
+  align-items: center;
+  /* background-color: green; */
 }
 
 .unit-container {
@@ -20,7 +22,7 @@
 }
 
 .current-temp {
-  font-size: 80px;
+  font-size: 64px;
   font-weight: 700;
 }
 .unit-container {
@@ -30,4 +32,6 @@
 .current-temp-icon-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  /* background-color: red; */
 }

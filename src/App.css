@@ -3,6 +3,8 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #407088;
+  min-width: 930px;
+  max-width: 1400px;
 }
 
 .app-container {
