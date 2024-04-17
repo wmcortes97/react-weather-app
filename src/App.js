@@ -1,14 +1,14 @@
+import { useEffect } from "react";
+import Search from "./components/Search/Search";
 import "./App.css";
-// import Search from "./components/Search";
-import Footer from "./components/Footer";
-// import Main from "./components/Main";
-// import Week from "./components/Week";
 
 function App() {
+  useEffect(() => {
+    console.log("App component mounted");
+  }, []);
   return (
     <div className="app-container">
-      {/* <Search /> */}
-      <Footer />
+      <Search />
     </div>
   );
 }
